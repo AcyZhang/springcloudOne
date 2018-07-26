@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-pojo" />
+        <module name="apipojo" />
+        <module name="erueka-service" />
+        <module name="info-html" />
+        <module name="info-service" />
+        <module name="insert-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-pojo" target="1.5" />
+      <module name="erueka-service" target="1.8" />
+      <module name="info-html" target="1.8" />
+      <module name="info-htnl" target="1.8" />
+      <module name="info-service" target="1.8" />
+      <module name="insert-service" target="1.8" />
+      <module name="springcloudOne" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

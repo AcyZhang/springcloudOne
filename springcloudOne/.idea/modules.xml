@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-pojo/api-pojo.iml" filepath="$PROJECT_DIR$/api-pojo/api-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/erueka-service/erueka-service.iml" filepath="$PROJECT_DIR$/erueka-service/erueka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/info-html/info-html.iml" filepath="$PROJECT_DIR$/info-html/info-html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/info-service/info-service.iml" filepath="$PROJECT_DIR$/info-service/info-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/insert-service/insert-service.iml" filepath="$PROJECT_DIR$/insert-service/insert-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloudOne.iml" filepath="$PROJECT_DIR$/springcloudOne.iml" />
+    </modules>
+  </component>
+</project>

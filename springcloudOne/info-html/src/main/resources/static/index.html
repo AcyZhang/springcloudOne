@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<h2 style="padding-left: 100px">在线问答</h2>
+<p style="padding-left: 150px"><a href="insert.html">新增问题</a></p>
+<table id="content" border="1">
+
+</table>
+</body>
+<script src="jquery-1.8.3.js"></script>
+<script>
+    $(function () {
+        getAll();
+    })
+    function getAll(){
+        $.ajax({
+            url:"http://localhost:8762/getAll.do",
+            data:{},
+            dataType:"jsonp",
+            jsonCallback:"userHandler",
+            type:"post",
+            success:function (result) {
+                var content="<tr><td>序号</td><td>问题</td><td>回答次数</td><td>最后修改</td></tr>"
+                $.each(result,function (i,e) {
+                    content+="<tr><td>"+e.id+"</td>" +
+                        "<td>"+e.title+"</td>" +
+                        "<td>"+e.answerCount+"</td>" +
+                        "<td>"+e.lastModified+"</td></tr>"
+                })
+                $("#content").html(content);
+            },
+            error:function () {
+                alert("系统错误");
+            }
+        })
+    }
+</script>
+</html>
